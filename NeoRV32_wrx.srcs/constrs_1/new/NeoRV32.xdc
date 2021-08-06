@@ -1,0 +1,30 @@
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_i]
+set_property IOSTANDARD LVCMOS33 [get_ports rstn_i]
+set_property IOSTANDARD LVCMOS33 [get_ports uart0_rxd_i]
+set_property IOSTANDARD LVCMOS33 [get_ports uart0_txd_o]
+
+create_clock -period 10.000 -name clk_i -waveform {0.000 5.000} [get_ports clk_i]
+
+
+set_property PACKAGE_PIN T18 [get_ports rstn_i]
+set_property PACKAGE_PIN Y11 [get_ports {gpio_o[7]}]
+set_property PACKAGE_PIN AA11 [get_ports {gpio_o[6]}]
+set_property PACKAGE_PIN Y10 [get_ports {gpio_o[5]}]
+set_property PACKAGE_PIN AA9 [get_ports {gpio_o[4]}]
+set_property PACKAGE_PIN AB11 [get_ports {gpio_o[3]}]
+set_property PACKAGE_PIN AB10 [get_ports {gpio_o[2]}]
+set_property PACKAGE_PIN AB9 [get_ports {gpio_o[1]}]
+set_property PACKAGE_PIN W22 [get_ports {gpio_o[0]}]
+set_property PACKAGE_PIN Y9 [get_ports clk_i]
+set_property PACKAGE_PIN V10 [get_ports uart0_rxd_i]
+set_property PACKAGE_PIN W11 [get_ports uart0_txd_o]
+
+
